@@ -1,0 +1,108 @@
+.header {
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: 1px solid var(--border-line);
+}
+
+.logo-header {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+  margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
+.logo-black {
+  color: var(--header-logo-color);
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+  height: 80px;
+}
+
+.site-nav {
+  margin-right: auto;
+  display: flex;
+}
+
+.site-nav__list {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.contacts-header {
+  gap: 50px;
+  display: flex;
+}
+
+.site-nav__item {
+  padding: 32px 0;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--title-color);
+}
+
+.site-nav .active {
+  color: var(--accent-color);
+  position: relative;
+}
+.active::after {
+  position: absolute;
+  display: block;
+  content: '';
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 4px;
+  background-color: var(--accent-color);
+  border-radius: 2px;
+}
+.site-nav__link {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.site-nav__link:focus,
+.site-nav__link:hover,
+.site-nav__link:focus,
+.list-head :focus,
+.list-head :active,
+.contacts-header :hover,
+.contacts-header :focus,
+.contacts-header__icon :focus,
+.contacts-header__icon :hover {
+  color: var(--accent-color);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contacts-header__item {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  padding: 32px 0;
+}
+.site-nav__link {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1)
+}
+.contacts-header__link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--heder-icons-color);
+  font-weight: 500;
+  line-height: 1.14;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.contacts-header__icon {
+  margin-right: 10px;
+  fill: currentColor;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
