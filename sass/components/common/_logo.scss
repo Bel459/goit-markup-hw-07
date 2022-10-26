@@ -5,18 +5,20 @@
   font-weight: 700;
   line-height: 1.19;
   text-decoration: none;
+
+  &__item {
+    color: $accent-color;
+  }
+
+  &--header {
+    margin-right: 93px;
+    color: $black;
+  }
+
+  &--footer {
+    margin-bottom: 20px;
+    color: $white;
+  }
 }
 
-.logo__item {
-  color: $accent-color;
-}
 
-.logo--header {
-  margin-right: 93px;
-  color: $black;
-}
-
-.logo--footer {
-  margin-bottom: 20px;
-  color: $white;
-}

@@ -1,24 +1,25 @@
 .header {
   height: 80px;
   border-bottom: 1px solid #ececec;
+
+  &__inner {
+    display: flex;
+     align-items: center;
+  }
 }
 
-.header__inner {
-  display: flex;
-  align-items: center;
-}
-
-.contact__list {
-  display: flex;
+.contact {
+  &__list {
+    display: flex;
   margin-left: auto;
-}
+  }
 
-.contact__item:first-child {
-  margin-right: 50px;
-}
+  &__item:first-child {
+    margin-right: 50px;
+  }
 
-.contact__link {
-  display: flex;
+  &__link {
+    display: flex;
   align-items: center;
   font-weight: 500;
   text-decoration: none;
@@ -32,9 +33,14 @@
   &:focus {
     color: $accent-color;
   }
+  }
+
+  &__icon {
+    margin-right: 10px;
+    fill: currentColor;
+  }
 }
 
-.contact__icon {
-  fill: currentColor;
-  margin-right: 10px;
-}
+
+
+
