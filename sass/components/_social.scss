@@ -1,20 +1,19 @@
 .social {
   display: flex;
   justify-content: center;
-}
 
-.social__item {
-  width: 44px;
+  &__item {
+    width: 44px;
   height: 44px;
   margin-right: 10px;
 
   &:last-child {
     margin-right: 0;
   }
-}
+  }
 
-.social__link {
-  display: flex;
+  &__link {
+    display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -32,17 +31,17 @@
     background-color: $accent-color;
     color: $primary-bg-color;
   }
-}
+  }
 
-.social__icon {
-  fill: currentColor;
-}
+  &__icon {
+    fill: currentColor;
+  }
 
-.social--team {
-  margin-bottom: 30px;
-}
+  &--team {
+    margin-bottom: 30px;
+  }
 
-.social__title {
+  &__title {
   margin-top: 12px;
   margin-bottom: 20px;
   font-size: 14px;
@@ -50,9 +49,10 @@
   line-height: 1.14;
   text-transform: uppercase;
   color: $secondary-bg-color;
-}
+  }
 
-.social__link--white {
+  &__link--white {
   color: $white;
   background-color: rgba(255, 255, 255, 0.1);
+  }
 }
